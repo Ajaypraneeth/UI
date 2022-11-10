@@ -4,8 +4,31 @@ import { IoSearchCircleOutline } from "react-icons/io5";
 import { GrPlan } from "react-icons/gr";
 import { SiMaterialdesign } from "react-icons/si";
 import { BsBuilding } from "react-icons/bs";
+import Data from "./Data";
+
 
 function App() {
+  const set= [{
+    Image:<IoSearchCircleOutline />,
+    cardtitle:"ANALYSIS",
+    cardtext:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+  },
+  {
+    Image:<GrPlan/>,
+    cardtitle:"PLANNING",
+    cardtext:"Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat.",
+  },
+  {
+    Image:<SiMaterialdesign/>,
+    cardtitle:"DESIGN",
+    cardtext:"Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat."
+  },
+  {
+    Image:<BsBuilding/>,
+    cardtitle:"BUILDING",
+    cardtext:"Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat."
+  },
+  ];
   return (
     <>
       <div className="container fluid">
@@ -31,7 +54,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <Data set={set}/>
+
+ {/* <div className="container">
         <div className="row">
           <div className="card col-md-3 bg-warning mb-6">
             <div className="card-body">
@@ -102,8 +127,8 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <div>
+  </div>*/}
+  <div>
         <footer className="mt-5">
           <br />
           <br />
